@@ -6,6 +6,7 @@ import Main from './Main';
 const App = (props) => {
   return (
     <div>
+      <div id="modal"></div>
       <Header />
       <Main />
     </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const modalRoot = document.getElementById('modal');
-
 class Modal extends React.Component {
 
   render() {
+    if(!this.props.show) {
+      return null;
+    }
 
      const modalStyle = {
         background: 'transparent',
@@ -20,7 +21,7 @@ class Modal extends React.Component {
       <div style={modalStyle} >
         {this.props.children}
       </div>,
-      modalRoot,
+      document.getElementById('modal'),
     );
   }
 }

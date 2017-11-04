@@ -77,7 +77,7 @@ class Header extends React.Component {
       <div style={headerStyle} >
         <button style={headerButtonStyle}  onClick={this.showLogin} >Login</button>
         <button style={headerButtonStyle}  onClick={this.showProfile} >Hi {this.state.email}</button>
-        <Modal>
+        <Modal show={this.state.showLogin || this.state.showProfile}>
           <Login show={this.state.showLogin} onLogin={this.onLogin} onCancel={this.cancelLogin} />
           <Profile show={this.state.showProfile} email={this.state.email} onClose={this.closeProfile} />
         </Modal>  
