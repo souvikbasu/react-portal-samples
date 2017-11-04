@@ -9,11 +9,11 @@ class App extends React.Component {
       super(props);
       this.state = {showLogin: false};
 
-      this.showLogin = this.showLogin.bind(this);
+      this.showLoginBox = this.showLoginBox.bind(this);
       this.cancelLogin = this.cancelLogin.bind(this);
     }
 
-    showLogin() {
+    showLoginBox() {
       this.setState({
         showLogin: true
       });
@@ -30,7 +30,7 @@ class App extends React.Component {
 
       return (
         <div>
-          <Header showLogin={this.showLogin}  />
+          <Header showLogin={this.showLoginBox}  />
           <Main />
           <Login show={this.state.showLogin} onCancel={this.cancelLogin} />
         </div>
