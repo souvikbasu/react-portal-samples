@@ -2,10 +2,6 @@ import React from 'react';
 
 const Login = (props) => {
   
-  if(!props.show) {
-    return null;
-  }
-
     const loginBoxStyle = {
         backgroundColor: 'lightgray',
         borderRadius: 10,

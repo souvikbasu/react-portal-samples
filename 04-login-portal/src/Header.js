@@ -48,8 +48,8 @@ class Header extends React.Component {
     return (
       <div style={headerStyle} >
         <button style={headerButtonStyle}  onClick={this.showLogin} >Login</button>
-        <Modal>
-          <Login show={this.state.showLogin} onCancel={this.cancelLogin} />
+        <Modal show={this.state.showLogin}>
+          <Login onCancel={this.cancelLogin} />
         </Modal>  
       </div>
     );
