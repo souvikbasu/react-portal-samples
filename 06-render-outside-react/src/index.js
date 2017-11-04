@@ -4,5 +4,5 @@ import './index.css';
 
 import Profile from './Profile';
 
-ReactDOM.render(<Profile show="true" />, document.getElementById('react_root'));
+ReactDOM.render(<Profile show="true" />, document.getElementById('profile'));
 
